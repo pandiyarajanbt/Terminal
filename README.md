@@ -43,6 +43,6 @@ Let's work together to enhance and build scalable, real-world projects.
 To run this project locally:
 
 ```bash
-git clone https://github.com/your-username/terminal-repository.git
+git clone https://github.com/pandiyarajanbt/Terminal.git
 cd terminal-repository
 docker-compose up --build
