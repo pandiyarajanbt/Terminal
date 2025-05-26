@@ -30,5 +30,6 @@ class CreateTerminalView(APIView):
                 'stderr': stderr,
                 'terminal_id': terminal.id
             }, status=201)
+        
         except Exception as e:
             return Response({'status': 'error', 'message': str(e)}, status=500)
