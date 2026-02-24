@@ -1,5 +1,5 @@
 """
-URL configuration for terminal project.
+URL configuration for teminal project.
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/5.2/topics/http/urls/
@@ -15,11 +15,8 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import re_path
-from core.views import CreateTerminalView
+from django.urls import path
 
 urlpatterns = [
-    re_path('api/terminal/admin/', admin.site.urls),
-    re_path('terminal/create/', CreateTerminalView.as_view(), name='create-terminal'),
+    path('admin/', admin.site.urls),
 ]
-
